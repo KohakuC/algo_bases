@@ -40,11 +40,26 @@ def table_multiplication(n: int) -> list[int]:
 
 def trouver_maximum(nums: list[int]) -> int:
     # TODO: Implémentez une fonction pour trouver et retourner la valeur maximale dans la liste.
+    result = None
+    for value in nums:
+        if result is None:
+            result = value
+        elif value > result:
+            result = value
+            
+    # Boucle pour regarder chaque élément de la liste
+        # comparer l'élément de la liste avec celui précédent
+        # Si cet élément est > alors le garder
+        # Continuer jusqu'à ce que tous les éléments de la liste aient été comparés 
+        
+    return result
     raise NotImplementedError
 
 
 def calculer_moyenne(nums: list[int]) -> float:
     # TODO: Implémentez une fonction pour calculer et retourner la moyenne des valeurs dans la liste.
+    moyenne = []
+
     raise NotImplementedError
 
 
