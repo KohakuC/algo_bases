@@ -13,6 +13,11 @@ def somme_pairs(nums: list[int]) -> int:
 
 def compter_occurrences(items: list[int], valeur: int) -> int:
     # TODO: Implémentez la fonction pour compter le nombre d'occurrences de `valeur` dans la liste `items`.
+    count = 0
+    for nb in items:
+        if nb == valeur:
+            count += 1
+    return count
     raise NotImplementedError
 
 
