@@ -55,7 +55,6 @@ def calculer_moyenne(nums: list[int]) -> float:
     if len(nums) == 0:
         return 0
     value = sum(nums) / len(nums)
-
     return value
 
     raise NotImplementedError
@@ -68,6 +67,10 @@ def compter_negatifs(nums: list[int]) -> int:
 
 def compter_mots(phrase: str) -> int:
     # TODO: Implémentez une fonction pour compter le nombre de mots dans une chaîne de caractères donnée.
+    if phrase == "":
+        return 0
+    number = phrase.split(" ")
+    return len(number)
     raise NotImplementedError
 
 
