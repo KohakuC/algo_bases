@@ -46,19 +46,17 @@ def trouver_maximum(nums: list[int]) -> int:
             result = value
         elif value > result:
             result = value
-            
-    # Boucle pour regarder chaque élément de la liste
-        # comparer l'élément de la liste avec celui précédent
-        # Si cet élément est > alors le garder
-        # Continuer jusqu'à ce que tous les éléments de la liste aient été comparés 
-        
     return result
     raise NotImplementedError
 
 
 def calculer_moyenne(nums: list[int]) -> float:
     # TODO: Implémentez une fonction pour calculer et retourner la moyenne des valeurs dans la liste.
-    moyenne = []
+    if len(nums) == 0:
+        return 0
+    value = sum(nums) / len(nums)
+
+    return value
 
     raise NotImplementedError
 
