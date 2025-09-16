@@ -23,6 +23,18 @@ def compter_occurrences(items: list[int], valeur: int) -> int:
 
 def table_multiplication(n: int) -> list[int]:
     # TODO: Implémentez la fonction pour retourner la table de multiplication de `n` (jusqu'à 10 inclus).
+    # 1 - déclarer une variable qui est un tableau vide
+    result = []
+    # 2 - Boucle pour remplir le tableau
+        # Faire une boucle pour laquelle i va de 1 à 10
+        # Ajoute n * i à result
+    i = 1
+    while i < 11:
+        result.append(i * n)
+        i += 1
+        
+    # 3 - retourner le tableau
+    return result
     raise NotImplementedError
 
 
