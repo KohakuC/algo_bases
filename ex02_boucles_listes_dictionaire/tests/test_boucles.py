@@ -96,7 +96,7 @@ def test_trouver_mot_finissant_par():
 
 
 def test_compter_caracteres():
-    assert compter_caracteres("Bonjour tout le monde", "o") == 3
+    assert compter_caracteres("Bonjour tout le monde", "o") == 4
     assert compter_caracteres("", "a") == 0
 
 
