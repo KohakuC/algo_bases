@@ -62,6 +62,11 @@ def calculer_moyenne(nums: list[int]) -> float:
 
 def compter_negatifs(nums: list[int]) -> int:
     # TODO: Implémentez une fonction pour compter et retourner le nombre d'entiers négatifs dans la liste.
+    result = 0
+    for value in nums:
+        if value < 0:
+            result += 1
+    return result
     raise NotImplementedError
 
 
@@ -70,12 +75,24 @@ def compter_mots(phrase: str) -> int:
     if phrase == "":
         return 0
     number = phrase.split(" ")
-    return len(number)
+    word_nb = len(number)
+    return word_nb
     raise NotImplementedError
 
 
 def trouver_plus_long(items: list[str]) -> str:
     # TODO: Implémentez une fonction pour trouver et retourner le mot le plus long dans une liste de chaînes de caractères.
+    
+    if len(items) == 0: 
+        return ""
+
+    longest_word = items[0]
+
+    for word in items:
+        if len(word) > len(longest_word):
+            longest_word = word
+    return longest_word
+
     raise NotImplementedError
 
 
