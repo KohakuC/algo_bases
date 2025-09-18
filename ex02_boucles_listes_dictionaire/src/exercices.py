@@ -8,7 +8,7 @@ def somme_pairs(nums: list[int]) -> int:
         if number % 2 == 0:
             result += number
     return result
-    raise NotImplementedError
+
 
 
 def compter_occurrences(items: list[int], valeur: int) -> int:
@@ -18,7 +18,7 @@ def compter_occurrences(items: list[int], valeur: int) -> int:
         if nb == valeur:
             count += 1
     return count
-    raise NotImplementedError
+
 
 
 def table_multiplication(n: int) -> list[int]:
@@ -35,7 +35,6 @@ def table_multiplication(n: int) -> list[int]:
         
     # 3 - retourner le tableau
     return result
-    raise NotImplementedError
 
 
 def trouver_maximum(nums: list[int]) -> int:
@@ -47,7 +46,6 @@ def trouver_maximum(nums: list[int]) -> int:
         elif value > result:
             result = value
     return result
-    raise NotImplementedError
 
 
 def calculer_moyenne(nums: list[int]) -> float:
@@ -57,8 +55,6 @@ def calculer_moyenne(nums: list[int]) -> float:
     value = sum(nums) / len(nums)
     return value
 
-    raise NotImplementedError
-
 
 def compter_negatifs(nums: list[int]) -> int:
     # TODO: Implémentez une fonction pour compter et retourner le nombre d'entiers négatifs dans la liste.
@@ -67,7 +63,6 @@ def compter_negatifs(nums: list[int]) -> int:
         if value < 0:
             result += 1
     return result
-    raise NotImplementedError
 
 
 def compter_mots(phrase: str) -> int:
@@ -77,7 +72,6 @@ def compter_mots(phrase: str) -> int:
     number = phrase.split(" ")
     word_nb = len(number)
     return word_nb
-    raise NotImplementedError
 
 
 def trouver_plus_long(items: list[str]) -> str:
@@ -92,8 +86,6 @@ def trouver_plus_long(items: list[str]) -> str:
         if len(word) > len(longest_word):
             longest_word = word
     return longest_word
-
-    raise NotImplementedError
 
 
 def convertir_majuscule(items: list[str]) -> list[str]:
