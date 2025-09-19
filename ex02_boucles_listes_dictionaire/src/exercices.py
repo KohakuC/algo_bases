@@ -183,7 +183,22 @@ def trouver_occurrences_chaine(s: str, c: str) -> int:
 # tuples
 def somme_pairs_tuples(nums: tuple[int, ...]) -> int:
     # TODO: Implémentez la fonction pour calculer la somme de tous les nombres pairs dans un tuple donné.
-    raise NotImplementedError
+    # Pour savoir si un nb est pair : modulo
+    # Parcourir les valeurs du tuple
+        # Reconnaitre les nombres pairs
+        # Les extraires ?
+        # Additionner les nombres pairs
+    # retourner le résultat
+
+    result = 0
+
+    for number in nums:
+        if number % 2 == 0:
+            result = number + result
+    
+    return result
+
+
 
 
 def compter_occurrences_tuples(items: tuple[int, ...], valeur: int) -> int:
