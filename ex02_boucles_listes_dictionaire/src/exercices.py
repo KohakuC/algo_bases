@@ -102,26 +102,73 @@ def convertir_majuscule(items: list[str]) -> list[str]:
     return maj_word
 
 
-
-def compter_mots_commencant_par(items: list[str], lettre: str) -> int:
+def compter_mots_commencant_par(items: str, lettre: str) -> int:
     # TODO: Implémentez une fonction pour compter les mots commençant par une lettre donnée.
-    raise NotImplementedError
+
+# Si le mot commence par une lettre donnée alors :
+    # Ajoute +1 au décompte
+# Si non n'ajoute rien au décompte
+    # Attention à la casse
+    items = items.split()
+    
+    if len(items) == 0:
+        return 0
+
+    result = 0
+
+    for word in items:
+        if word.lower().startswith(lettre.lower()):
+            result += 1
+
+    return result
 
 
-def trouver_mot_finissant_par(items: list[str], suffixe: str) -> list[str]:
+def trouver_mot_finissant_par(items: str, suffixe: str) -> list[str]:
     # TODO: Implémentez une fonction pour trouver tous les mots qui se terminent par un suffixe donné dans la liste.
-    raise NotImplementedError
+    items = items.split()
+    
+    if len(items) == 0:
+        return 0
+    result = []
+    
+    for word in items:
+        if word.lower().endswith(suffixe.lower()):
+            result.append(word)
+    return result
 
 
-def compter_caracteres(s: str) -> int:
+def compter_caracteres(s: str, c: str) -> int:
     # TODO: Implémentez une fonction pour compter et retourner le nombre total de caractères dans la chaîne.
-    raise NotImplementedError
+    # Créer une variable pour stocker le résultat intialisée à 0
+    # Parcourir tous les caractères
+        # Si le caractères est trouvé, on ajoute 1
+        # Si non, on n'ajoute rien
+    # Retourner le résultat
+
+    result = 0
+
+    for lettre in s:
+        if lettre == c:
+            result += 1
+
+    return result
 
 
 def inverser_chaine(s: str) -> str:
     # TODO: Implémentez une fonction pour inverser et retourner la chaîne de caractères donnée.
-    raise NotImplementedError
+    # Prendre en compte si la chaine de caractère est vide
+    # Créer une variable pour stocker le résultat
+    # Inverser la chaine de caractères
+    # Retourner la chaine de caractères inversée
 
+    if s == "":
+        return ""
+
+    result = ""
+
+    result = s[::-1]
+
+    return result
 
 def trouver_occurrences_chaine(s: str, c: str) -> int:
     # TODO: Implémentez une fonction pour compter les occurrences d'un caractère donné dans une chaîne.
