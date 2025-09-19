@@ -210,12 +210,22 @@ def compter_occurrences_tuples(items: tuple[int, ...], valeur: int) -> int:
 
 def table_multiplication_tuples(n: int) -> tuple[int, ...]:
     # TODO: Implémentez la fonction pour retourner la table de multiplication (jusqu'à 10 inclus) sous forme de tuple.
-    raise NotImplementedError
+    result = ()
+    y = 0
+
+    i = 1
+    while i < 11:
+        y = (i * n,)
+        result += y
+        i +=1
+    return result
 
 
 def trouver_maximum_tuples(nums: tuple[int, ...]) -> int:
     # TODO: Implémentez une fonction pour trouver et retourner le nombre maximum d'un tuple.
-    raise NotImplementedError
+    result = ()
+
+    return max(nums)
 
 
 def calculer_moyenne_tuples(nums: tuple[int, ...]) -> float:
