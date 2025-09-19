@@ -199,11 +199,13 @@ def somme_pairs_tuples(nums: tuple[int, ...]) -> int:
     return result
 
 
-
-
 def compter_occurrences_tuples(items: tuple[int, ...], valeur: int) -> int:
     # TODO: Implémentez la fonction pour compter le nombre d'occurrences d'une valeur dans un tuple donné.
-    raise NotImplementedError
+    count = 0
+    for nb in items:
+        if nb == valeur:
+            count += 1
+    return count
 
 
 def table_multiplication_tuples(n: int) -> tuple[int, ...]:
