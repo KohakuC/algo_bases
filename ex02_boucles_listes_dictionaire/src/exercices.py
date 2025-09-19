@@ -125,7 +125,7 @@ def compter_mots_commencant_par(items: str, lettre: str) -> int:
 
 def trouver_mot_finissant_par(items: str, suffixe: str) -> list[str]:
     # TODO: Implémentez une fonction pour trouver tous les mots qui se terminent par un suffixe donné dans la liste.
-    items = items.split()
+    items = items.split(" ")
     
     if len(items) == 0:
         return 0
@@ -164,15 +164,21 @@ def inverser_chaine(s: str) -> str:
     if s == "":
         return ""
 
-    result = ""
-
     result = s[::-1]
 
     return result
 
 def trouver_occurrences_chaine(s: str, c: str) -> int:
     # TODO: Implémentez une fonction pour compter les occurrences d'un caractère donné dans une chaîne.
-    raise NotImplementedError
+    # Créer une variable pour stocker le résultat
+    # Parcourir tous les caractères
+        # Comparer au caractère donné
+        # Stocker la réponse dans la variable préalablement crée
+    # Retourner le résultat
+    
+    result = s.count(c)
+
+    return result
 
 # tuples
 def somme_pairs_tuples(nums: tuple[int, ...]) -> int:
